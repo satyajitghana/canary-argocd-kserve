@@ -1,7 +1,5 @@
-apiVersion: "serving.kserve.io/v1beta1"
-kind: "InferenceService"
 metadata:
-  name: "cat-classifier"
+  name: "food-classifier"
   annotations:
     serving.kserve.io/enable-metric-aggregation: "true"
     serving.kserve.io/enable-prometheus-scraping: "true"
@@ -11,7 +9,7 @@ spec:
     model:
       modelFormat:
         name: pytorch
-      storageUri: s3://tsai-emlo/kserve-ig-2/cat-classifier/
+      storageUri: s3://tsai-emlo/kserve-ig-2/food-classifier/
       resources:
         limits:
           cpu: 2600m
