@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/satyajitghana/canary-argocd-kserve.git
-    targetRevision: HEAD
+    targetRevision: emlo4
     path: model-deployments
   destination:
     server: https://kubernetes.default.svc
